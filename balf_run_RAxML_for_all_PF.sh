@@ -63,10 +63,6 @@ echo "#!/bin/bash
 #$ -m a
 #$ -M ${MY_EMAIL_ACCOUNT}
 
-#---Change walltime to be the expected number of hours for the run-------------#
-#---NOTE: The run will be killed if this time is exceeded----------------------#
-#---Change the -M flag to point to your email address.-------------------------#
-
 
 cd ${PWD}
 
