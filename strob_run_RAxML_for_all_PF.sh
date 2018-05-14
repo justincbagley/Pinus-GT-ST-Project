@@ -52,7 +52,7 @@ echo "INFO      | $(date) | STEP #2: LOOP THROUGH RAxML FOLDERS, CONDITIONALLY S
 						if [[ ! -f ./strob_clade_simData.PF.partitions ]]; then
 							MY_TOTAL_NUM_LINES="$(cat ../PartitionFinder/analysis/best_scheme.txt | wc -l | sed 's/\ //g')"
 							MY_RAXML_PART_START_LINE="$(cat ../PartitionFinder/analysis/best_scheme.txt | grep -n 'RaxML' | sed 's/:.*//')"
-							sed -n ''"$MY_RAXML_PART_START_LINE"','"$MY_TOTAL_NUM_LINES"'p' ../PartitionFinder/analysis/best_scheme.txt > ./strob_clade_simData.PF.partitions
+							sed -n ''"$MY_RAXML_PART_START_LINE"','"$MY_TOTAL_NUM_LINES"'p' ../PartitionFinder/analysis/best_scheme.txt | sed '1d' > ./strob_clade_simData.PF.partitions
 						fi
 
 						if [[ ! -f ./raxml_qsub.sh ]]; then
