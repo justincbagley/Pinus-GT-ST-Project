@@ -59,7 +59,7 @@ echo "INFO      | $(date) | STEP #2: LOOP THROUGH RAxML FOLDERS, CONDITIONALLY S
 echo "INFO      | $(date) | Creating raxml run (shell) script... "
 echo "#!/bin/bash
 
-#$ -N ${MY_FOLDERNAME}
+#$ -N ${MY_FOLDERNAME}_raxml
 #$ -S /bin/bash
 #$ -cwd
 #$ -V
