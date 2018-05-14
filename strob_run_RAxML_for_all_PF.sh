@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#  Copyright ©2018 Justinc C. Bagley. For further information, see README and license    #
+#  available in the Pinus-GT-ST-Project repository (https://github.com/justincbagley/ \  #
+#  Pinus-GT-ST-Project/ Last update: May 13, 2018. For questions, please email           #
+#  jcbagley@vcu.edu.                                                                     #
+
 ## Script for conditionally setting up and running basic, full BS and ML search run in
 ## SSE3 HPC MPI version of RAxML v8 (Stamatakis 2014) in the 'raxml' subdirectory of each
 ## model run folder (e.g. ./M9_10/, is model M9 run 10) for strob_clade.
