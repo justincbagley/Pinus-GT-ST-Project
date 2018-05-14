@@ -85,8 +85,8 @@ exit 0
 						if [[ "$MY_REMAINING_QUEUE_SLOTS" -ge "1" ]]; then
 							qsub ./raxml_qsub.sh/;
 						elif [[ "$MY_REMAINING_QUEUE_SLOTS" ! -ge "1" ]]; then
-							echo "WARNING!  | $(date) | Insufficient slots remaining to queue ${MY_FOLDERNAME} RAxML run. Quitting... "
-							exit 1
+							echo "WARNING!  | $(date) | Insufficient slots remaining to queue ${MY_FOLDERNAME} RAxML run. Checking next run folder... "
+							##exit 1
 						fi
 
 					cd ..;
